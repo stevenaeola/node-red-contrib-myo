@@ -1,0 +1,27 @@
+<script type="text/javascript">
+ RED.nodes.registerType('myoband',{
+     category: 'music',
+     color: '#45e3ff',
+     defaults: {
+	 name: {value:""}
+     },
+     inputs:1,
+     outputs:1,
+     icon: "myo_icon.png",
+     label: function() {
+	 return this.name||"Myoband";
+     }
+ 
+ });
+</script>
+
+<script type="text/x-red" data-template-name="myoband">
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="myoband">
+ <p>For use with Myo armband from Thalmic labs</p>
+</script>

@@ -1,0 +1,35 @@
+{
+  "name": "node-red-contrib-myoband",
+  "version": "1.0.0",
+  "description": "Thalmic labs myo armband node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevenaeola/node-red-contrib-myoband.git"
+  },
+  "keywords": [
+    "node-red",
+    "thalmic",
+    "myo",
+    "myoband",
+    "armband"
+  ],
+  "author": "s.p.bradley@durham.ac.uk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenaeola/node-red-contrib-myoband/issues"
+  },
+  "homepage": "https://github.com/stevenaeola/node-red-contrib-myoband",
+  "dependencies": {
+    "myo": "^3.0.0",
+    "ws": "^3.3.0"
+  },
+    "node-red" : {
+        "nodes": {
+            "myoband": "myoband.js"
+        }
+    }
+}
